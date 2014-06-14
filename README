@@ -1,0 +1,17 @@
+This is a simple JSON library for C++.
+
+- The interface is identical to C++ STL types.  JSONArray and JSONObject types
+  are based on std::vector and std::map, and work the same way.
+
+- Works with std::string strings and with iostreams.
+
+- Intended to be used with UTF-8 encoded data or single-byte encodings.
+
+- Does not preserve order of {} object members.
+
+- No reference-counting or garbage-collection.
+
+- Type errors are derived from runtime_error.
+
+- NOT thread-safe.  Hold a lock before doing anything in a multithreaded
+  environment.
